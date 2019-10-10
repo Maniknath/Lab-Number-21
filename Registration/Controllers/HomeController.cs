@@ -35,11 +35,11 @@ namespace Registration.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult Registration()
+        public IActionResult Register()
         {
             return View();
         }
-        public IActionResult AddUser(User user)
+        public IActionResult Result(User user)
         {
             ViewBag.Name = user.FirstName;
             return View();
